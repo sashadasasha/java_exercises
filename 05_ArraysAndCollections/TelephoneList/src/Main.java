@@ -34,7 +34,7 @@ public class Main {
                 }
             } else if (matcherNumber.matches()) {
                 if (telephoneBook.containsValue(userInput)) { ;
-                    checkNumber(telephoneBook, userInput);
+                    printNumber(telephoneBook, userInput);
                 } else {
                     System.out.println("Введите имя контакта");
                     String name = reader.readLine();
@@ -45,13 +45,12 @@ public class Main {
     }
 
     public static void printList (Map<String, String> map) {
-        for (String key : map.keySet()) {
-            System.out.println(key + "=>" + map.get(key));
+        for (Map.Entry<String, String> val: map.entrySet()) {
+            System.out.println(val);
         }
-
     }
 
-    public static void checkNumber (Map<String, String> map, String numberForChecking) {
+    public static void printNumber (Map<String, String> map, String numberForChecking) {
         for (String key : map.keySet()) {
             if (map.get(key).equals(numberForChecking)) {
                 System.out.println(key + "=>" + map.get(key));
