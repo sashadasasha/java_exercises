@@ -29,11 +29,11 @@ public class Main {
 
         ArrayList<String> regions = new ArrayList<>();
         for (int i = 1; i < 200; i++) {
+            if (i < 10) {
+                regions.add("0" + i);
+                continue;
+            }
             regions.add(Integer.toString(i));
-        }
-
-        for (int i = 0; i < 9; i++) {
-            regions.set(i, "0" + regions.get(i));
         }
 
         ArrayList<String> numbers = new ArrayList<>() {{
@@ -48,37 +48,48 @@ public class Main {
             add("999");
         }};
 
+        ArrayList<String> numbersForIdenticalLetters = new ArrayList<>();
+
+        for (int i = 1; i < 1000; i ++) {
+            if (i<10) {
+                numbersForIdenticalLetters.add("00" + i);
+                continue;
+            }
+            if (i < 100) {
+                numbersForIdenticalLetters.add("0" + i);
+                continue;
+            }
+            if (i == 111 || i == 222 || i == 333 || i == 444 || i == 555 || i == 666 || i == 777 || i == 888 || i == 999 ) {
+                continue;
+            }
+            numbersForIdenticalLetters.add(Integer.toString(i));
+
+        }
+
+
         ArrayList<String> generatedNumbers = new ArrayList<>();
 
-        String genNum = "";
-        for (int i = 0; i < letters.size(); i++) {
-            genNum = "";
-            genNum += letters.get(i);
-            for (String number : numbers) {
-                String genNumCopy1 = genNum;
-                genNum += number;
-                for (String letter2 : letters) {
-                    String genNumCopy2 = genNum;
-                    genNum += letter2;
-                    for (String letter3 : letters) {
-                        String genNumCopy3 = genNum;
-                        genNum += letter3;
-                        for (String region : regions) {
-                            String genNumCopy = genNum;
-                            genNum += region;
-                            generatedNumbers.add(genNum);
-                            genNum = genNumCopy;
+        for (String letter: letters) {
+            for (String number: numbers) {
+                for (String letter2: letters) {
+                    for (String letter3: letters) {
+                        for (String region: regions) {
+                            generatedNumbers.add(String.format("%s%s%s%s%s", letter, number, letter2, letter3, region));
+                            if (letter.equals(letter2) && letter.equals(letter3)) {
+                                for (String num : numbersForIdenticalLetters) {
+                                    generatedNumbers.add(String.format("%s%s%s%s%s", letter, num, letter2, letter3, region));
+                                }
+                            }
                         }
-                        genNum = genNumCopy3;
                     }
-                    genNum = genNumCopy2;
                 }
-                genNum = genNumCopy1;
             }
         }
+
         System.out.println(generatedNumbers.size());
-        //Пробовала и с такой сортировкой, и без нее. Не знаю, что будет считаться правильной сортировкой в данном случае
-        // Collections.sort(generatedNumbers);
+
+        //Да, вот эта сортировка нужна, без нее некорректно ищет
+        Collections.sort(generatedNumbers);
         HashSet<String> hashSet = new HashSet<>(generatedNumbers);
         TreeSet<String> treeSet = new TreeSet<>(generatedNumbers);
 
