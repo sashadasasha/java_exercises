@@ -3,22 +3,31 @@ package skill.box61;
 import java.time.LocalDate;
 
 public class DepositCount extends BankAccount {
-    LocalDate dateOfAddingMoney;
+    private LocalDate dateOfAddingMoney;
 
     @Override
-    public void takeMoney(double sumForTaking) {
+    public double takeMoney(double sumForTaking) {
         LocalDate today = LocalDate.now();
-        if (today.minusMonths(1).isBefore(dateOfAddingMoney)) {
+        if (today.minusMonths(1).isBefore(getDateOfAddingMoney())) {
             System.out.println("Не прошло месяца после последнего пополнения!");
+            return getAccountMoney();
         } else {
-            super.takeMoney(sumForTaking);
+            return super.takeMoney(sumForTaking);
         }
     }
 
-    //Как это правильно оформить? Такой override не проходит, когда еще один аргумент в метод добавляю
-    public void putMoney(double sumForAdding, LocalDate date) {
-        this.dateOfAddingMoney = date;
+    @Override
+    public void putMoney(double sumForAdding) {
+        this.setDateOfAddingMoney(LocalDate.now());
         super.putMoney(sumForAdding);
-        System.out.println("Дата пополнения " + dateOfAddingMoney);
+        System.out.println("Дата пополнения " + getDateOfAddingMoney());
+    }
+
+    public LocalDate getDateOfAddingMoney() {
+        return dateOfAddingMoney;
+    }
+
+    public void setDateOfAddingMoney(LocalDate dateOfAddingMoney) {
+        this.dateOfAddingMoney = dateOfAddingMoney;
     }
 }
