@@ -1,6 +1,6 @@
 package skill.box6_3;
 
-abstract class Client {
+public abstract class Client {
     private final int COUNT;
     private double countBalance;
 
