@@ -9,7 +9,7 @@ public class BankAccount {
             System.out.println("Недостаточно средств на счете");
             return accountMoney;
         } else {
-            setAccountMoney(getAccountMoney() - sumForTaking);
+            accountMoney = getAccountMoney() - sumForTaking;
             return accountMoney;
         }
     }
@@ -19,7 +19,7 @@ public class BankAccount {
         if (sumForAdding <= 0) {
             System.out.println("Некорректная сумма для добавления");
         } else {
-            setAccountMoney(getAccountMoney() + sumForAdding);
+            accountMoney = getAccountMoney() + sumForAdding;
         }
     }
 
@@ -27,7 +27,4 @@ public class BankAccount {
         return accountMoney;
     }
 
-    public void setAccountMoney(double accountMoney) {
-        this.accountMoney = accountMoney;
-    }
 }

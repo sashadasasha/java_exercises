@@ -18,7 +18,7 @@ public class DepositCount extends BankAccount {
 
     @Override
     public void putMoney(double sumForAdding) {
-        this.setDateOfAddingMoney(LocalDate.now());
+        dateOfAddingMoney = LocalDate.now();
         super.putMoney(sumForAdding);
         System.out.println("Дата пополнения " + getDateOfAddingMoney());
     }
@@ -27,7 +27,4 @@ public class DepositCount extends BankAccount {
         return dateOfAddingMoney;
     }
 
-    public void setDateOfAddingMoney(LocalDate dateOfAddingMoney) {
-        this.dateOfAddingMoney = dateOfAddingMoney;
-    }
 }
