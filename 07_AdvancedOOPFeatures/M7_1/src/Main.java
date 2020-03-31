@@ -9,8 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         ArrayList<Employee> staff = loadStaffFromFile();
-        Collections.sort(staff, Comparator.comparing(Employee::getName));
-        Collections.sort(staff, Comparator.comparing(Employee::getSalary));
+        Collections.sort(staff, Comparator.comparing(Employee::getSalary).thenComparing(Employee::getName));
 
         for (Employee empl: staff) {
             System.out.println(empl);
