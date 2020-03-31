@@ -43,7 +43,7 @@ public class Main {
             gazprom.fire(gazprom.getEmployees().get(whoFiredGenerator(gazprom)));
         }
 
-        System.out.println(gazprom.getCountEmployees());
+        System.out.println(gazprom.getEmployees().size());
         System.out.println("---------------------");
         gazprom.getTopSalaryStaff(10);
         System.out.println("---------------------");
@@ -65,7 +65,7 @@ public class Main {
 
     //Генератор увольнения случайного сотрудника
     public static int whoFiredGenerator(Company company) {
-        int count = company.getCountEmployees();
+        int count = company.getEmployees().size();
         return (int)(Math.random() * ((count) + 1));
     }
 }

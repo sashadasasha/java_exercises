@@ -8,12 +8,10 @@ public class Company {
     private String name;
     private double income;
     private ArrayList<Employee> employees = new ArrayList<>();
-    private int countEmployees;
 
-    public Company (String name, double income) {
+    public Company(String name, double income) {
         this.name = name;
         this.income = income;
-        this.countEmployees = 0;
         System.out.println("Компания создана");
     }
 
@@ -21,7 +19,6 @@ public class Company {
         employees.add(employee);
         System.out.println("Сотрудник принят!");
         employee.setCompany(this);
-        this.countEmployees ++;
     }
 
     public void hireAll(ArrayList<Employee> employees) {
@@ -34,7 +31,6 @@ public class Company {
         if (employees.contains(employee)) {
             employees.remove(employee);
             System.out.println("Сотрудник уволен");
-            this.countEmployees --;
         }
     }
 
@@ -42,45 +38,37 @@ public class Company {
         return this.income;
     }
 
-    public int getCountEmployees() {
-        return this.countEmployees;
-    }
-
     public void getTopSalaryStaff(int count) {
-        if(count > 0) {
-            TreeSet<Double> topSalaries = new TreeSet<>();
-            for (Employee empl: employees) {
-                topSalaries.add(empl.getMonthSalary());
-            }
-            for (int i = 0; i < count; i ++) {
-                System.out.println(topSalaries.last());
-                topSalaries.remove(topSalaries.last());
-            }
-        } else if (count > countEmployees){
+        if (count > employees.size()) {
             System.out.println("Нет такого количества сотрудников");
+        } else if (count > 0) {
+            employees.sort(Collections.reverseOrder((empl1, empl2) -> {
+                return Double.compare(empl1.getMonthSalary(), empl2.getMonthSalary());
+            }));
+            for (Employee empl : employees.subList(0, count - 1)) {
+                System.out.println(empl.getMonthSalary());
+            }
         } else {
             System.out.println("Введите корректное количество сотрудников");
         }
     }
 
     public void getLowestSalaryStaff(int count) {
-        if(count > 0) {
-            TreeSet<Double> topSalaries = new TreeSet<>();
-            for (Employee empl: employees) {
-                topSalaries.add(empl.getMonthSalary());
-            }
-            for (int i = 0; i < count; i ++) {
-                System.out.println(topSalaries.first());
-                topSalaries.remove(topSalaries.first());
-            }
-        } else if (count > countEmployees){
+        if (count > employees.size()) {
             System.out.println("Нет такого количества сотрудников");
+        } else if (count > 0) {
+            employees.sort((empl1, empl2) -> {
+                return Double.compare(empl1.getMonthSalary(), empl2.getMonthSalary());
+            });
+            for (Employee empl : employees.subList(0, count - 1)) {
+                System.out.println(empl.getMonthSalary());
+            }
         } else {
             System.out.println("Введите корректное количество сотрудников");
         }
     }
 
-    public ArrayList<Employee> getEmployees() {
+    public ArrayList<Employee> getEmployees () {
         return this.employees;
     }
 }
