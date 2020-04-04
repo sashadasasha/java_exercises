@@ -2,17 +2,14 @@ import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CustomerStorage
-{
+public class CustomerStorage {
     private HashMap<String, Customer> storage;
 
-    public CustomerStorage()
-    {
+    public CustomerStorage() {
         storage = new HashMap<>();
     }
 
-    public void addCustomer(String data)
-    {
+    public void addCustomer(String data) throws EmailException, PhoneException {
         String[] components = data.split("\\s+");
         if (components.length != 4) {
             throw new IllegalArgumentException("Wrong format! Correct format: \n" +
@@ -24,29 +21,26 @@ public class CustomerStorage
         Matcher matcher;
         matcher = patternEmail.matcher(components[2]);
         if (!matcher.matches()) {
-            throw new IllegalArgumentException("Wrong format of email! Correct format: \n" +
+            throw new EmailException("Wrong format of email! Correct format: \n" +
                     "vasily.petrov@gmail.com");
         }
         matcher = patternPhone.matcher(components[3]);
         if (!matcher.matches()) {
-            throw new IllegalArgumentException("Wrong format of phone number! Correct format: \n" +
+            throw new PhoneException("Wrong format of phone number! Correct format: \n" +
                     "+79215637722");
         }
         storage.put(name, new Customer(name, components[3], components[2]));
     }
 
-    public void listCustomers()
-    {
+    public void listCustomers() {
         storage.values().forEach(System.out::println);
     }
 
-    public void removeCustomer(String name)
-    {
+    public void removeCustomer(String name) {
         storage.remove(name);
     }
 
-    public int getCount()
-    {
+    public int getCount() {
         return storage.size();
     }
 }
