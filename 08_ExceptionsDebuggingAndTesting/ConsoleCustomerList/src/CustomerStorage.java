@@ -9,7 +9,7 @@ public class CustomerStorage {
         storage = new HashMap<>();
     }
 
-    public void addCustomer(String data) throws EmailException, PhoneException {
+    public void addCustomer(String data) throws EmailException {
         String[] components = data.split("\\s+");
         if (components.length != 4) {
             throw new IllegalArgumentException("Wrong format! Correct format: \n" +

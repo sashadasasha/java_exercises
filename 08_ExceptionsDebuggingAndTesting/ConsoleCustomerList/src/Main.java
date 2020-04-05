@@ -29,7 +29,7 @@ public class Main {
                 } else {
                     System.out.println(commandError);
                 }
-            } catch (IllegalArgumentException ex) {
+            } catch (EmailException ex) {
                 System.out.println(ex.getMessage());
             }
         }
