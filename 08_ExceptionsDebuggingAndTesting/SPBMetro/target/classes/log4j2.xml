@@ -42,7 +42,7 @@
 
     <Loggers>
         <Root level="all">
-            <AppenderRef ref="debugLog" />-->
+            <AppenderRef ref="debugLog" />
             <AppenderRef ref="infoLog"  />
             <AppenderRef ref="errorLog" />
         </Root>
