@@ -5,19 +5,18 @@ import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 public class FileSize {
-    private static final Path FILE_PATH = Paths.get("/media/sasha/3c0c1705-6766-4724-8a72-b46458c5d3401/Документы/");
     private static long size = 0; //bytes
     private static boolean isItDirectory = false;
     public static void main(String[] args) throws IOException {
-        getFileSize(FILE_PATH);
-        getValuesOfSize(size);
+        getFileSize(Paths.get(args[0]));
+        printHumanReadableSize(size);
     }
 
     public static void getFileSize(Path path) throws IOException {
         if (Files.isDirectory(path)) {
             isItDirectory = true;
         Stream<Path> files = Files.list(path);
-        files.forEach(file -> {
+            Files.list(path).forEach(file -> {
             if (Files.isDirectory(file)) {
                 try {
                     getFileSize(file);
@@ -37,7 +36,7 @@ public class FileSize {
         }
     }
 
-    public static void getValuesOfSize(long size) {
+    public static void printHumanReadableSize(long size) {
         String typeOfFile = "";
         if (isItDirectory) {
             typeOfFile = "Директории";
