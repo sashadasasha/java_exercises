@@ -2,10 +2,8 @@ import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
+import java.nio.file.*;
+import java.nio.file.attribute.BasicFileAttributes;
 
 class FilesCopy {
     private static boolean isItDirectory = false;
@@ -16,28 +14,38 @@ class FilesCopy {
     }
 
     public static void getCopyFile(Path oldRoute, Path newRoute) throws IOException {
-        Files.list(oldRoute).forEach(file -> {
-            if (Files.isDirectory(file)) {
-                try {
-                    Path nameFolder = file.getFileName();
-                    Path destinationRoute = Paths.get(newRoute + "/" + nameFolder);
-                    Path originalRoute = Paths.get(oldRoute + "/" + nameFolder);
-                    if (Files.exists(destinationRoute)) {
-                        FileUtils.deleteDirectory(new File(String.valueOf(destinationRoute)));
-                    }
-                    Files.copy(originalRoute, destinationRoute);
-                    getCopyFile(originalRoute, destinationRoute);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            } else {
-                try {
-                    Files.copy(file, Paths.get(newRoute + "/" + file.getFileName()), StandardCopyOption.REPLACE_EXISTING);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+        Files.walkFileTree(oldRoute, new FileCopyVisitor(oldRoute, newRoute));
+    }
 
+    public static class FileCopyVisitor extends SimpleFileVisitor<Path> {
+        private Path source, destination;
+
+        public FileCopyVisitor(Path sourcePath, Path desPath) {
+            this.source = sourcePath;
+            this.destination = desPath;
+        }
+
+        public FileVisitResult visitFile(Path path, BasicFileAttributes fileAttributes) {
+            Path newDes = destination.resolve(source.relativize(path));
+            try {
+                Files.copy(path, newDes, StandardCopyOption.REPLACE_EXISTING);
+            } catch (IOException ioe) {
+                ioe.printStackTrace();
             }
-        });
+            return FileVisitResult.CONTINUE;
+        }
+
+        public FileVisitResult preVisitDirectory(Path path, BasicFileAttributes fileAttributes) {
+            Path newDes = destination.resolve(source.relativize(path));
+            try {
+                if (Files.exists(newDes)) {
+                    FileUtils.deleteDirectory(new File(String.valueOf(newDes)));
+                }
+                Files.copy(path, newDes, StandardCopyOption.REPLACE_EXISTING);
+            } catch (IOException ioe) {
+                ioe.printStackTrace();
+            }
+            return FileVisitResult.CONTINUE;
+        }
     }
 }
