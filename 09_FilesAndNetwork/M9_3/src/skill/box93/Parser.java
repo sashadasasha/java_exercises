@@ -26,20 +26,12 @@ public class Parser {
         HashMap<String, Double> mapOfOutcome= new HashMap<>();
 
         for (OutcomeInfo i : listOfOutcomes) {
-            if (mapOfOutcome.isEmpty()) {
-                mapOfOutcome.put(i.getCodeStatus(), i.getSum());
-            } else {
-                if (mapOfOutcome.containsKey(i.getCodeStatus())) {
-                    mapOfOutcome.put(i.getCodeStatus(), mapOfOutcome.get(i.getCodeStatus()) + i.getSum());
-                } else {
-                    mapOfOutcome.put(i.getCodeStatus(), i.getSum());
-                }
-            }
+            mapOfOutcome.computeIfPresent(i.getCodeStatus(), (key, value) -> value + i.getSum());
+            mapOfOutcome.putIfAbsent(i.getCodeStatus(), i.getSum());
         }
 
-
         for (Map.Entry<String, Double> pairs : mapOfOutcome.entrySet()) {
-            System.out.printf("По операциям, относящихся к категории %s потрачено %s%n", pairs.getKey(), pairs.getValue());
+            System.out.printf("По операциям, относящихся к категории %s потрачено %.2f%n", pairs.getKey(), pairs.getValue());
         }
     }
 
