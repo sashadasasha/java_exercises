@@ -30,24 +30,22 @@ public class LentaParser {
         ArrayList<String> imagesAdresses = new ArrayList<>();
         String pathForImage = folderAddress;
         for (Element image : images) {
-            imagesAdresses.add(image.attr("src"));
+            if (image.attr("src").startsWith("https")) {
+                imagesAdresses.add(image.attr("src"));
+            }
         }
-
-        /**
-         * Два последних адреса вида //mc.yandex.ru/watch/27714477
-         * //counter.rambler.ru/top100.cnt?pid=80674
-         *
-         * Удалила их из списка просто вручную.
-         */
-        imagesAdresses.remove(imagesAdresses.size()-1);
-        imagesAdresses.remove(imagesAdresses.size()-1);
 
         int index = 1;
         for (String addr : imagesAdresses) {
-            System.out.println(addr);
             URI u = URI.create(addr);
             try (InputStream in = u.toURL().openStream()) {
-                Files.copy(in, Paths.get(pathForImage + index + ".jpg"), REPLACE_EXISTING);
+                if (addr.endsWith(".jpg")) {
+                    Files.copy(in, Paths.get(pathForImage + index + ".jpg"), REPLACE_EXISTING);
+                } else if (addr.endsWith(".png")) {
+                    Files.copy(in, Paths.get(pathForImage + index + ".png"), REPLACE_EXISTING);
+                } else {
+                    System.out.println("Неверный формат файла");
+                }
             }
             index ++;
         }
