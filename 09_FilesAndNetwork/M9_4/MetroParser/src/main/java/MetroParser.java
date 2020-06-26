@@ -1,15 +1,14 @@
-import com.google.gson.*;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MetroParser {
     public static void main(String[] args) throws IOException {
@@ -42,29 +41,28 @@ public class MetroParser {
         jsonMap.put("Lines", lines);
         jsonMap.put("Stations", stations);
 
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String json = gson.toJson(jsonMap);
-        Files.writeString(Paths.get("F:\\SkillBox\\java_basics\\09_FilesAndNetwork\\M9_4\\MetroParser\\data\\metro.json"), json);
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.
+                writerWithDefaultPrettyPrinter().
+                writeValue(new File("F:\\SkillBox\\java_basics\\09_FilesAndNetwork\\M9_4\\MetroParser\\data\\metro.json"), jsonMap);
     }
 
     public static void readFromJson(String pathToFile) throws IOException {
         byte[] bytesFromJson = Files.readAllBytes(Paths.get(pathToFile));
-        JsonObject jsonObject = JsonParser.parseString(new String(bytesFromJson)).getAsJsonObject();
-        JsonArray Lines = jsonObject.get("Lines").getAsJsonArray();
-        JsonArray Stations = jsonObject.get("Stations").getAsJsonArray();
+        ObjectMapper objectMapper = new ObjectMapper();
+        JsonNode jsonNode = objectMapper.readTree(new String(bytesFromJson));
+        JsonNode lines = jsonNode.get("Lines");
+        JsonNode stations = jsonNode.get("Stations");
         Map<String, Integer> countStationsOnLine = new HashMap<>();
-        Lines.forEach(el -> {
-           String numberOfLine = el.getAsJsonObject().get("number").toString();
-           countStationsOnLine.put(el.getAsJsonObject().get("name").toString(), 0);
-           Stations.forEach(station -> {
-               if (station.getAsJsonObject().get("numberOfLine").toString().equals(numberOfLine)) {
-                   countStationsOnLine.replace(el.getAsJsonObject().get("name").toString(),
-                           countStationsOnLine.get(el.getAsJsonObject().get("name").toString()) + 1);
-               }
-           });
+        lines.forEach(line -> {
+            String numberOfLine = line.get("number").toString();
+            countStationsOnLine.put(line.get("name").toString(), 0);
+            stations.forEach(station -> {
+                if (station.get("numberOfLine").toString().equals(numberOfLine)) {
+                    countStationsOnLine.replace(line.get("name").toString(), countStationsOnLine.get(line.get("name").toString()) + 1);
+                }
+            });
         });
-        countStationsOnLine.entrySet().forEach(element -> {
-            System.out.println("Линия" + element.getKey() +": количество станций - " + element.getValue());
-        });
+        countStationsOnLine.forEach((key, value) -> System.out.println("Линия" + key + ": количество станций - " + value));
     }
 }
