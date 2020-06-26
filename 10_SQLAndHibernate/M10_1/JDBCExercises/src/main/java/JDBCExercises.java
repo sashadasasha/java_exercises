@@ -9,7 +9,7 @@ public class JDBCExercises {
         Statement statement = conn.createStatement();
 
         ResultSet rs = statement.executeQuery("SELECT course_name AS \"Название курса\", " +
-                "(count(course_name)/max(month(subscription_date))) AS \"Среднее количество продаж\" " +
+                "(count(course_name)/(max(month(subscription_date)) - min(month(subscription_date)) + 1)) AS \"Среднее количество продаж\" " +
                 "FROM skillbox.purchaselist GROUP BY course_name;");
 
         ResultSetMetaData rsmd = rs.getMetaData();
