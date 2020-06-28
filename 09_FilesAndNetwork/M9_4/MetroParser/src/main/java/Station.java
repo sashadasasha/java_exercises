@@ -1,6 +1,10 @@
 public class Station {
     private String name;
-     private String numberOfLine;
+    private String numberOfLine;
+
+    public Station() {
+        super();
+    }
 
     public Station(String name, String numberOfLine) {
         this.name = name;

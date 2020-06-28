@@ -1,5 +1,5 @@
 {
-  "Stations" : [ {
+  "stations" : [ {
     "name" : "Бульвар Рокоссовского",
     "numberOfLine" : "1"
   }, {
@@ -981,7 +981,7 @@
     "name" : "Подольск",
     "numberOfLine" : "D2"
   } ],
-  "Lines" : [ {
+  "lines" : [ {
     "name" : "Сокольническая линия",
     "number" : "1"
   }, {
