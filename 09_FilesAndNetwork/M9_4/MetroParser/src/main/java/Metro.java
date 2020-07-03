@@ -5,44 +5,31 @@ import java.util.Map;
 public class Metro {
 
     private List<Line> lines;
-    private List<Station> stations;
-    private Map<String, Integer> countStationsOnLine;
+    private Map<String, List<Station>> stationsOnLines;
 
     public Metro() {
         super();
     }
 
-    public Metro(List<Line> lines, List<Station> stations) {
+    public Metro(List<Line> lines, Map<String, List<Station>> stationsOnLines) {
         this.lines = lines;
-        this.stations = stations;
+        this.stationsOnLines = stationsOnLines;
     }
 
     public List<Line> getLines() {
         return lines;
     }
 
-    public List<Station> getStations() {
-        return stations;
-    }
-
     public void setLines(List<Line> lines) {
         this.lines = lines;
     }
 
-    public void setStations(List<Station> stations) {
-        this.stations = stations;
+    public Map<String, List<Station>> getStationsOnLines() {
+        return stationsOnLines;
     }
 
-    public void getNumberOfStationsOnLine() {
-        countStationsOnLine = new HashMap<>();
-        lines.forEach(line -> {
-            countStationsOnLine.put(line.getName(), 0);
-            stations.forEach(station -> {
-                if (station.getNumberOfLine().equals(line.getNumber())) {
-                    countStationsOnLine.replace(line.getName(), countStationsOnLine.get(line.getName()) + 1);
-                }
-            });
-        });
-        countStationsOnLine.forEach((key, value) -> System.out.println("Линия - " + key + ": количество станций - " + value));
+    public void setStationsOnLines(Map<String, List<Station>> stationsOnLines) {
+        this.stationsOnLines = stationsOnLines;
     }
+
 }

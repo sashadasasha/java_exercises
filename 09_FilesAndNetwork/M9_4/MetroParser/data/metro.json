@@ -1,986 +1,4 @@
 {
-  "stations" : [ {
-    "name" : "Бульвар Рокоссовского",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Черкизовская",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Преображенская площадь",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Сокольники",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Красносельская",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Комсомольская",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Красные ворота",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Чистые пруды",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Лубянка",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Охотный ряд",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Библиотека имени Ленина",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Кропоткинская",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Парк Культуры",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Фрунзенская",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Спортивная",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Воробьевы горы",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Университет",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Проспект Вернадского",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Юго-Западная",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Тропарёво",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Румянцево",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Саларьево",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Филатов Луг",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Прокшино",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Ольховая",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Коммунарка",
-    "numberOfLine" : "1"
-  }, {
-    "name" : "Ховрино",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Беломорская",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Речной вокзал",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Водный стадион",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Войковская",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Сокол",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Аэропорт",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Динамо",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Белорусская",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Маяковская",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Тверская",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Театральная",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Новокузнецкая",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Павелецкая",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Автозаводская",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Технопарк",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Коломенская",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Каширская",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Кантемировская",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Царицыно",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Орехово",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Домодедовская",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Красногвардейская",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Алма-Атинская",
-    "numberOfLine" : "2"
-  }, {
-    "name" : "Пятницкое шоссе",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Митино",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Волоколамская",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Мякинино",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Строгино",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Крылатское",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Молодежная",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Кунцевская",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Славянский бульвар",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Парк Победы",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Киевская",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Смоленская",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Арбатская",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Площадь Революции",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Курская",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Бауманская",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Электрозаводская",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Семеновская",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Партизанская",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Измайловская",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Первомайская",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Щелковская",
-    "numberOfLine" : "3"
-  }, {
-    "name" : "Александровский сад",
-    "numberOfLine" : "4"
-  }, {
-    "name" : "Арбатская",
-    "numberOfLine" : "4"
-  }, {
-    "name" : "Смоленская",
-    "numberOfLine" : "4"
-  }, {
-    "name" : "Киевская",
-    "numberOfLine" : "4"
-  }, {
-    "name" : "Студенческая",
-    "numberOfLine" : "4"
-  }, {
-    "name" : "Кутузовская",
-    "numberOfLine" : "4"
-  }, {
-    "name" : "Фили",
-    "numberOfLine" : "4"
-  }, {
-    "name" : "Багратионовская",
-    "numberOfLine" : "4"
-  }, {
-    "name" : "Филевский парк",
-    "numberOfLine" : "4"
-  }, {
-    "name" : "Пионерская",
-    "numberOfLine" : "4"
-  }, {
-    "name" : "Кунцевская",
-    "numberOfLine" : "4"
-  }, {
-    "name" : "Выставочная",
-    "numberOfLine" : "4"
-  }, {
-    "name" : "Международная",
-    "numberOfLine" : "4"
-  }, {
-    "name" : "Киевская",
-    "numberOfLine" : "5"
-  }, {
-    "name" : "Парк Культуры",
-    "numberOfLine" : "5"
-  }, {
-    "name" : "Октябрьская",
-    "numberOfLine" : "5"
-  }, {
-    "name" : "Добрынинская",
-    "numberOfLine" : "5"
-  }, {
-    "name" : "Павелецкая",
-    "numberOfLine" : "5"
-  }, {
-    "name" : "Таганская",
-    "numberOfLine" : "5"
-  }, {
-    "name" : "Курская",
-    "numberOfLine" : "5"
-  }, {
-    "name" : "Комсомольская",
-    "numberOfLine" : "5"
-  }, {
-    "name" : "Проспект Мира",
-    "numberOfLine" : "5"
-  }, {
-    "name" : "Новослободская",
-    "numberOfLine" : "5"
-  }, {
-    "name" : "Белорусская",
-    "numberOfLine" : "5"
-  }, {
-    "name" : "Краснопресненская",
-    "numberOfLine" : "5"
-  }, {
-    "name" : "Новоясеневская",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Ясенево",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Теплый стан",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Коньково",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Беляево",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Калужская",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Новые Черёмушки",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Профсоюзная",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Академическая",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Ленинский проспект",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Шаболовская",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Октябрьская",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Третьяковская",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Китай-город",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Тургеневская",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Сухаревская",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Проспект Мира",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Рижская",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Алексеевская",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "ВДНХ",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Ботанический сад",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Свиблово",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Бабушкинская",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Медведково",
-    "numberOfLine" : "6"
-  }, {
-    "name" : "Котельники",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Жулебино",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Лермонтовский проспект",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Выхино",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Рязанский проспект",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Кузьминки",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Текстильщики",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Волгоградский проспект",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Пролетарская",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Таганская",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Китай-город",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Кузнецкий мост",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Пушкинская",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Баррикадная",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Улица 1905 года",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Беговая",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Полежаевская",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Октябрьское Поле",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Щукинская",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Спартак",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Тушинская",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Сходненская",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Планерная",
-    "numberOfLine" : "7"
-  }, {
-    "name" : "Новокосино",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Новогиреево",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Перово",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Шоссе Энтузиастов",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Авиамоторная",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Площадь Ильича",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Марксистская",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Третьяковская",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Деловой центр",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Парк Победы",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Минская",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Ломоносовский проспект",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Раменки",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Мичуринский проспект",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Озёрная",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Говорово",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Солнцево",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Боровское шоссе",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Новопеределкино",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Рассказовка",
-    "numberOfLine" : "8"
-  }, {
-    "name" : "Бульвар Дмитрия Донского",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Аннино",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Улица академика Янгеля",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Пражская",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Южная",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Чертановская",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Севастопольская",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Нахимовский Проспект",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Нагорная",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Нагатинская",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Тульская",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Серпуховская",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Полянка",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Боровицкая",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Чеховская",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Цветной бульвар",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Менделеевская",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Савеловская",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Дмитровская",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Тимирязевская",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Петровско-Разумовская",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Владыкино",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Отрадное",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Бибирево",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Алтуфьево",
-    "numberOfLine" : "9"
-  }, {
-    "name" : "Зябликово",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Шипиловская",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Борисово",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Марьино",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Братиславская",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Люблино",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Волжская",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Печатники",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Кожуховская",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Дубровка",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Крестьянская застава",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Римская",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Чкаловская",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Сретенский бульвар",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Трубная",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Достоевская",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Марьина роща",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Бутырская",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Фонвизинская",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Петровско-Разумовская",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Окружная",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Верхние Лихоборы",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Селигерская",
-    "numberOfLine" : "10"
-  }, {
-    "name" : "Савёловская",
-    "numberOfLine" : "11"
-  }, {
-    "name" : "Петровский парк",
-    "numberOfLine" : "11"
-  }, {
-    "name" : "ЦСКА",
-    "numberOfLine" : "11"
-  }, {
-    "name" : "Хорошёвская",
-    "numberOfLine" : "11"
-  }, {
-    "name" : "Шелепиха",
-    "numberOfLine" : "11"
-  }, {
-    "name" : "Деловой центр",
-    "numberOfLine" : "11"
-  }, {
-    "name" : "Каховская",
-    "numberOfLine" : "11A"
-  }, {
-    "name" : "Варшавская",
-    "numberOfLine" : "11A"
-  }, {
-    "name" : "Каширская",
-    "numberOfLine" : "11A"
-  }, {
-    "name" : "Битцевский парк",
-    "numberOfLine" : "12"
-  }, {
-    "name" : "Лесопарковая",
-    "numberOfLine" : "12"
-  }, {
-    "name" : "Улица Старокачаловская",
-    "numberOfLine" : "12"
-  }, {
-    "name" : "Улица Скобелевская",
-    "numberOfLine" : "12"
-  }, {
-    "name" : "Бульвар адмирала Ушакова",
-    "numberOfLine" : "12"
-  }, {
-    "name" : "Улица Горчакова",
-    "numberOfLine" : "12"
-  }, {
-    "name" : "Бунинская Аллея",
-    "numberOfLine" : "12"
-  }, {
-    "name" : "Окружная",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Владыкино",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Ботанический Сад",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Ростокино",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Белокаменная",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Бульвар Рокоссовского",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Локомотив",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Измайлово",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Соколиная Гора",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Шоссе Энтузиастов",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Андроновка",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Нижегородская",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Новохохловская",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Угрешская",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Дубровка",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Автозаводская",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "ЗИЛ",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Верхние Котлы",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Крымская",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Площадь Гагарина",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Лужники",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Кутузовская",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Деловой центр",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Шелепиха",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Хорошёво",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Зорге",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Панфиловская",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Стрешнево",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Балтийская",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Коптево",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Лихоборы",
-    "numberOfLine" : "14"
-  }, {
-    "name" : "Лефортово",
-    "numberOfLine" : "15"
-  }, {
-    "name" : "Авиамоторная",
-    "numberOfLine" : "15"
-  }, {
-    "name" : "Нижегородская",
-    "numberOfLine" : "15"
-  }, {
-    "name" : "Стахановская",
-    "numberOfLine" : "15"
-  }, {
-    "name" : "Окская",
-    "numberOfLine" : "15"
-  }, {
-    "name" : "Юго-Восточная",
-    "numberOfLine" : "15"
-  }, {
-    "name" : "Косино",
-    "numberOfLine" : "15"
-  }, {
-    "name" : "Улица Дмитриевского",
-    "numberOfLine" : "15"
-  }, {
-    "name" : "Лухмановская",
-    "numberOfLine" : "15"
-  }, {
-    "name" : "Некрасовка",
-    "numberOfLine" : "15"
-  }, {
-    "name" : "Одинцово",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Баковка",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Сколково",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Немчиновка",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Сетунь",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Рабочий Посёлок",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Кунцево",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Славянский бульвар",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Фили",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Тестовская",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Беговая",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Белорусская",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Савёловская",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Тимирязевская",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Окружная",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Дегунино",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Бескудниково",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Лианозово",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Марк",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Новодачная",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Долгопрудная",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Водники",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Хлебниково",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Шереметьевская",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Лобня",
-    "numberOfLine" : "D1"
-  }, {
-    "name" : "Нахабино",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Аникеевка",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Опалиха",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Красногорская",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Павшино",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Пенягино",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Волоколамская",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Трикотажная",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Тушино",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Стрешнево",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Красный Балтиец",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Гражданская",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Дмитровская",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Рижская",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Каланчёвская",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Курская",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Москва Товарная",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Калитники",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Новохохловская",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Текстильщики",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Кубанская",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Депо",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Перерва",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Москворечье",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Царицыно",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Покровская",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Красный Строитель",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Битца",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Бутово",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Щербинка",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Остафьево",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Силикатная",
-    "numberOfLine" : "D2"
-  }, {
-    "name" : "Подольск",
-    "numberOfLine" : "D2"
-  } ],
   "lines" : [ {
     "name" : "Сокольническая линия",
     "number" : "1"
@@ -1032,5 +50,1005 @@
   }, {
     "name" : "МЦД-2",
     "number" : "D2"
-  } ]
+  } ],
+  "stationsOnLines" : {
+    "Калининско-Солнцевская линия" : [ {
+      "name" : "Новокосино",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Новогиреево",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Перово",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Шоссе Энтузиастов",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Авиамоторная",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Площадь Ильича",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Марксистская",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Третьяковская",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Деловой центр",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Парк Победы",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Минская",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Ломоносовский проспект",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Раменки",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Мичуринский проспект",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Озёрная",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Говорово",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Солнцево",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Боровское шоссе",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Новопеределкино",
+      "numberOfLine" : "8"
+    }, {
+      "name" : "Рассказовка",
+      "numberOfLine" : "8"
+    } ],
+    "Арбатско-Покровская линия" : [ {
+      "name" : "Пятницкое шоссе",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Митино",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Волоколамская",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Мякинино",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Строгино",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Крылатское",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Молодежная",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Кунцевская",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Славянский бульвар",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Парк Победы",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Киевская",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Смоленская",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Арбатская",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Площадь Революции",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Курская",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Бауманская",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Электрозаводская",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Семеновская",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Партизанская",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Измайловская",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Первомайская",
+      "numberOfLine" : "3"
+    }, {
+      "name" : "Щелковская",
+      "numberOfLine" : "3"
+    } ],
+    "Кольцевая линия" : [ {
+      "name" : "Киевская",
+      "numberOfLine" : "5"
+    }, {
+      "name" : "Парк Культуры",
+      "numberOfLine" : "5"
+    }, {
+      "name" : "Октябрьская",
+      "numberOfLine" : "5"
+    }, {
+      "name" : "Добрынинская",
+      "numberOfLine" : "5"
+    }, {
+      "name" : "Павелецкая",
+      "numberOfLine" : "5"
+    }, {
+      "name" : "Таганская",
+      "numberOfLine" : "5"
+    }, {
+      "name" : "Курская",
+      "numberOfLine" : "5"
+    }, {
+      "name" : "Комсомольская",
+      "numberOfLine" : "5"
+    }, {
+      "name" : "Проспект Мира",
+      "numberOfLine" : "5"
+    }, {
+      "name" : "Новослободская",
+      "numberOfLine" : "5"
+    }, {
+      "name" : "Белорусская",
+      "numberOfLine" : "5"
+    }, {
+      "name" : "Краснопресненская",
+      "numberOfLine" : "5"
+    } ],
+    "Таганско-Краснопресненская линия" : [ {
+      "name" : "Котельники",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Жулебино",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Лермонтовский проспект",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Выхино",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Рязанский проспект",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Кузьминки",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Текстильщики",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Волгоградский проспект",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Пролетарская",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Таганская",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Китай-город",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Кузнецкий мост",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Пушкинская",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Баррикадная",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Улица 1905 года",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Беговая",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Полежаевская",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Октябрьское Поле",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Щукинская",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Спартак",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Тушинская",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Сходненская",
+      "numberOfLine" : "7"
+    }, {
+      "name" : "Планерная",
+      "numberOfLine" : "7"
+    } ],
+    "Замоскворецкая линия" : [ {
+      "name" : "Ховрино",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Беломорская",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Речной вокзал",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Водный стадион",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Войковская",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Сокол",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Аэропорт",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Динамо",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Белорусская",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Маяковская",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Тверская",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Театральная",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Новокузнецкая",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Павелецкая",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Автозаводская",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Технопарк",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Коломенская",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Каширская",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Кантемировская",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Царицыно",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Орехово",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Домодедовская",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Красногвардейская",
+      "numberOfLine" : "2"
+    }, {
+      "name" : "Алма-Атинская",
+      "numberOfLine" : "2"
+    } ],
+    "Бутовская линия" : [ {
+      "name" : "Битцевский парк",
+      "numberOfLine" : "12"
+    }, {
+      "name" : "Лесопарковая",
+      "numberOfLine" : "12"
+    }, {
+      "name" : "Улица Старокачаловская",
+      "numberOfLine" : "12"
+    }, {
+      "name" : "Улица Скобелевская",
+      "numberOfLine" : "12"
+    }, {
+      "name" : "Бульвар адмирала Ушакова",
+      "numberOfLine" : "12"
+    }, {
+      "name" : "Улица Горчакова",
+      "numberOfLine" : "12"
+    }, {
+      "name" : "Бунинская Аллея",
+      "numberOfLine" : "12"
+    } ],
+    "Люблинско-Дмитровская линия" : [ {
+      "name" : "Зябликово",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Шипиловская",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Борисово",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Марьино",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Братиславская",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Люблино",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Волжская",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Печатники",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Кожуховская",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Дубровка",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Крестьянская застава",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Римская",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Чкаловская",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Сретенский бульвар",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Трубная",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Достоевская",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Марьина роща",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Бутырская",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Фонвизинская",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Петровско-Разумовская",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Окружная",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Верхние Лихоборы",
+      "numberOfLine" : "10"
+    }, {
+      "name" : "Селигерская",
+      "numberOfLine" : "10"
+    } ],
+    "Большая Кольцевая Линия" : [ {
+      "name" : "Савёловская",
+      "numberOfLine" : "11"
+    }, {
+      "name" : "Петровский парк",
+      "numberOfLine" : "11"
+    }, {
+      "name" : "ЦСКА",
+      "numberOfLine" : "11"
+    }, {
+      "name" : "Хорошёвская",
+      "numberOfLine" : "11"
+    }, {
+      "name" : "Шелепиха",
+      "numberOfLine" : "11"
+    }, {
+      "name" : "Деловой центр",
+      "numberOfLine" : "11"
+    } ],
+    "Некрасовская линия" : [ {
+      "name" : "Лефортово",
+      "numberOfLine" : "15"
+    }, {
+      "name" : "Авиамоторная",
+      "numberOfLine" : "15"
+    }, {
+      "name" : "Нижегородская",
+      "numberOfLine" : "15"
+    }, {
+      "name" : "Стахановская",
+      "numberOfLine" : "15"
+    }, {
+      "name" : "Окская",
+      "numberOfLine" : "15"
+    }, {
+      "name" : "Юго-Восточная",
+      "numberOfLine" : "15"
+    }, {
+      "name" : "Косино",
+      "numberOfLine" : "15"
+    }, {
+      "name" : "Улица Дмитриевского",
+      "numberOfLine" : "15"
+    }, {
+      "name" : "Лухмановская",
+      "numberOfLine" : "15"
+    }, {
+      "name" : "Некрасовка",
+      "numberOfLine" : "15"
+    } ],
+    "МЦД-1" : [ {
+      "name" : "Одинцово",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Баковка",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Сколково",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Немчиновка",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Сетунь",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Рабочий Посёлок",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Кунцево",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Славянский бульвар",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Фили",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Тестовская",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Беговая",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Белорусская",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Савёловская",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Тимирязевская",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Окружная",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Дегунино",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Бескудниково",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Лианозово",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Марк",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Новодачная",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Долгопрудная",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Водники",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Хлебниково",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Шереметьевская",
+      "numberOfLine" : "D1"
+    }, {
+      "name" : "Лобня",
+      "numberOfLine" : "D1"
+    } ],
+    "МЦД-2" : [ {
+      "name" : "Нахабино",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Аникеевка",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Опалиха",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Красногорская",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Павшино",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Пенягино",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Волоколамская",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Трикотажная",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Тушино",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Стрешнево",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Красный Балтиец",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Гражданская",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Дмитровская",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Рижская",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Каланчёвская",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Курская",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Москва Товарная",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Калитники",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Новохохловская",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Текстильщики",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Кубанская",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Депо",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Перерва",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Москворечье",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Царицыно",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Покровская",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Красный Строитель",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Битца",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Бутово",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Щербинка",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Остафьево",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Силикатная",
+      "numberOfLine" : "D2"
+    }, {
+      "name" : "Подольск",
+      "numberOfLine" : "D2"
+    } ],
+    "Каховская линия" : [ {
+      "name" : "Каховская",
+      "numberOfLine" : "11A"
+    }, {
+      "name" : "Варшавская",
+      "numberOfLine" : "11A"
+    }, {
+      "name" : "Каширская",
+      "numberOfLine" : "11A"
+    } ],
+    "Сокольническая линия" : [ {
+      "name" : "Бульвар Рокоссовского",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Черкизовская",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Преображенская площадь",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Сокольники",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Красносельская",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Комсомольская",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Красные ворота",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Чистые пруды",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Лубянка",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Охотный ряд",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Библиотека имени Ленина",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Кропоткинская",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Парк Культуры",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Фрунзенская",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Спортивная",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Воробьевы горы",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Университет",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Проспект Вернадского",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Юго-Западная",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Тропарёво",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Румянцево",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Саларьево",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Филатов Луг",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Прокшино",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Ольховая",
+      "numberOfLine" : "1"
+    }, {
+      "name" : "Коммунарка",
+      "numberOfLine" : "1"
+    } ],
+    "Серпуховско-Тимирязевская линия" : [ {
+      "name" : "Бульвар Дмитрия Донского",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Аннино",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Улица академика Янгеля",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Пражская",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Южная",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Чертановская",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Севастопольская",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Нахимовский Проспект",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Нагорная",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Нагатинская",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Тульская",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Серпуховская",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Полянка",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Боровицкая",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Чеховская",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Цветной бульвар",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Менделеевская",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Савеловская",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Дмитровская",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Тимирязевская",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Петровско-Разумовская",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Владыкино",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Отрадное",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Бибирево",
+      "numberOfLine" : "9"
+    }, {
+      "name" : "Алтуфьево",
+      "numberOfLine" : "9"
+    } ],
+    "Филевская линия" : [ {
+      "name" : "Александровский сад",
+      "numberOfLine" : "4"
+    }, {
+      "name" : "Арбатская",
+      "numberOfLine" : "4"
+    }, {
+      "name" : "Смоленская",
+      "numberOfLine" : "4"
+    }, {
+      "name" : "Киевская",
+      "numberOfLine" : "4"
+    }, {
+      "name" : "Студенческая",
+      "numberOfLine" : "4"
+    }, {
+      "name" : "Кутузовская",
+      "numberOfLine" : "4"
+    }, {
+      "name" : "Фили",
+      "numberOfLine" : "4"
+    }, {
+      "name" : "Багратионовская",
+      "numberOfLine" : "4"
+    }, {
+      "name" : "Филевский парк",
+      "numberOfLine" : "4"
+    }, {
+      "name" : "Пионерская",
+      "numberOfLine" : "4"
+    }, {
+      "name" : "Кунцевская",
+      "numberOfLine" : "4"
+    }, {
+      "name" : "Выставочная",
+      "numberOfLine" : "4"
+    }, {
+      "name" : "Международная",
+      "numberOfLine" : "4"
+    } ],
+    "Центральное Кольцо" : [ {
+      "name" : "Окружная",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Владыкино",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Ботанический Сад",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Ростокино",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Белокаменная",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Бульвар Рокоссовского",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Локомотив",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Измайлово",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Соколиная Гора",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Шоссе Энтузиастов",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Андроновка",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Нижегородская",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Новохохловская",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Угрешская",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Дубровка",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Автозаводская",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "ЗИЛ",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Верхние Котлы",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Крымская",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Площадь Гагарина",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Лужники",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Кутузовская",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Деловой центр",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Шелепиха",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Хорошёво",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Зорге",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Панфиловская",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Стрешнево",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Балтийская",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Коптево",
+      "numberOfLine" : "14"
+    }, {
+      "name" : "Лихоборы",
+      "numberOfLine" : "14"
+    } ],
+    "Калужско-Рижская линия" : [ {
+      "name" : "Новоясеневская",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Ясенево",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Теплый стан",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Коньково",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Беляево",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Калужская",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Новые Черёмушки",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Профсоюзная",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Академическая",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Ленинский проспект",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Шаболовская",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Октябрьская",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Третьяковская",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Китай-город",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Тургеневская",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Сухаревская",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Проспект Мира",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Рижская",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Алексеевская",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "ВДНХ",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Ботанический сад",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Свиблово",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Бабушкинская",
+      "numberOfLine" : "6"
+    }, {
+      "name" : "Медведково",
+      "numberOfLine" : "6"
+    } ]
+  }
 }
