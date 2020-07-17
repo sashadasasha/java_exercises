@@ -13,8 +13,8 @@ public class Course {
     private String name;
     private int duration;
 
-    @Enumerated(EnumType.STRING)
-    @Column(columnDefinition = "enum")
+    @Enumerated(EnumType.ORDINAL)
+    @Column(columnDefinition = "ENUM('DESIGN','PROGRAMMING','MARKETING','MANAGMENT','BUSINESS')", nullable = false)
     private CourseType type;
     private String description;
     @Column(name = "teacher_id")
@@ -23,7 +23,7 @@ public class Course {
     private int studentsCount;
     private int price;
     @Column(name = "price_per_hour")
-    private float priceRerHour;
+    private float pricePerHour;
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "Subscriptions",
@@ -31,7 +31,7 @@ public class Course {
     inverseJoinColumns = {@JoinColumn (name = "student_id")})
     private List<Student> studentsList;
 
-    public Course(int id, String name, int duration, CourseType type, String description, int teacherId, int studentsCount, int price, float priceRerHour, List<Student> studentsList) {
+    public Course(int id, String name, int duration, CourseType type, String description, int teacherId, int studentsCount, int price, float pricePerHour, List<Student> studentsList) {
         this.id = id;
         this.name = name;
         this.duration = duration;
@@ -40,7 +40,7 @@ public class Course {
         this.teacherId = teacherId;
         this.studentsCount = studentsCount;
         this.price = price;
-        this.priceRerHour = priceRerHour;
+        this.pricePerHour = pricePerHour;
         this.studentsList = studentsList;
     }
 
@@ -112,12 +112,12 @@ public class Course {
         this.price = price;
     }
 
-    public float getPriceRerHour() {
-        return priceRerHour;
+    public float getPricePerHour() {
+        return pricePerHour;
     }
 
-    public void setPriceRerHour(float priceRerHour) {
-        this.priceRerHour = priceRerHour;
+    public void setPricePerHour(float pricePerHour) {
+        this.pricePerHour = pricePerHour;
     }
 
     public CourseType getType() {
