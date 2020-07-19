@@ -13,8 +13,8 @@ public class Course {
     private String name;
     private int duration;
 
-    @Enumerated(EnumType.ORDINAL)
-    @Column(columnDefinition = "ENUM('DESIGN','PROGRAMMING','MARKETING','MANAGMENT','BUSINESS')", nullable = false)
+    @Enumerated(EnumType.STRING)
+    @Column(columnDefinition = "ENUM('DESIGN','PROGRAMMING','MARKETING','MANAGMENT','BUSINESS')")
     private CourseType type;
     private String description;
     @Column(name = "teacher_id")

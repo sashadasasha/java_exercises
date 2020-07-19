@@ -26,10 +26,10 @@ public class JDBCExercises {
 //            });
             Transaction transaction = session.beginTransaction();
             Course course1 = new Course();
-            course1.setName("Новый курс");
-            course1.setTeacherId(2);
-            course1.setPrice(15000);
-            course1.setType(CourseType.MANAGMENT);
+            course1.setName("Еще еще курс");
+            course1.setTeacherId(1);
+            course1.setPrice(22000);
+            course1.setType(CourseType.BUSINESS);
             session.save(course1);
             transaction.commit();
         }
