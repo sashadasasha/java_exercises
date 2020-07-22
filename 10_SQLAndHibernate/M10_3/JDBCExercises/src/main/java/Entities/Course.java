@@ -18,7 +18,7 @@ public class Course {
     private CourseType type;
     private String description;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Teacher teacher;
     @Column(name = "students_count")
     private int studentsCount;
@@ -26,11 +26,15 @@ public class Course {
     @Column(name = "price_per_hour")
     private float pricePerHour;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     @JoinTable(name = "Subscriptions",
     joinColumns = {@JoinColumn (name= "course_id")},
     inverseJoinColumns = {@JoinColumn (name = "student_id")})
     private List<Student> studentsList;
+
+    @OneToMany
+    @JoinColumn(name = "course_id")
+    private List<Subscription> subscriptionList;
 
     public Course(int id, String name, int duration, CourseType type, String description, Teacher teacher, int studentsCount, int price, float pricePerHour, List<Student> studentsList) {
         this.id = id;
@@ -129,12 +133,12 @@ public class Course {
         this.type = type;
     }
 
-    public List<Entities.Student> getStudentsList() {
+    public List<Student> getStudentsList() {
         return studentsList;
     }
 
-    public void setStudentsList(List<Entities.Student> studentsList) {
-        this.studentsList = studentsList;
+    public List<Subscription> getSubscriptionList() {
+        return subscriptionList;
     }
 
     @Override

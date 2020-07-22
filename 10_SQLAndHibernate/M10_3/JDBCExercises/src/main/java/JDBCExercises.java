@@ -41,6 +41,10 @@ public class JDBCExercises {
 
             Course course = session.get(Course.class, 3);
             Student student = session.get(Student.class, 4);
+
+            course.getSubscriptionList().forEach(sub->{
+                System.out.println(sub.getSubscriptionDate());
+            });
 //            Subscription subscription = session.get(Subscription.class, new SubscriptionsKey(student, course));
 //            System.out.println(subscription.getSubscriptionDate());
 //            System.out.println(subscription.getSubscriptionsKey().getStudent().toString());
@@ -51,21 +55,22 @@ public class JDBCExercises {
 //            System.out.println(purchase.getPurchasesKye().getStudentName());
 //            System.out.println(purchase.getSubscriptionDate());
 
-            Transaction transaction = session.beginTransaction();
-            Course course1 = new Course();
-            course1.setName("Очень очень нужный курс");
-            course1.setTeacher(session.get(Teacher.class,52));
-            course1.setType(CourseType.BUSINESS);
-            course1.setPrice(79000);
-            session.save(course1);
-            Purchase purchase = new Purchase();
-            purchase.setPrice(79000);
-            purchase.setPurchasesKye(new PurchasesKey(course1.getName(), student.getName()));
-            Date date = new Date();
-            Timestamp ts = new Timestamp(date.getTime());
-            purchase.setSubscriptionDate(ts);
-            session.save(purchase);
-            transaction.commit();
+//            Transaction transaction = session.beginTransaction();
+//            Course course1 = new Course();
+//            course1.setName("Очень очень нужный курс");
+//            course1.setTeacher(session.get(Teacher.class,52));
+//            course1.setType(CourseType.BUSINESS);
+//            course1.setPrice(79000);
+//            session.save(course1);
+//            Purchase purchase = new Purchase();
+//            purchase.setPrice(79000);
+//            purchase.setPurchasesKye(new PurchasesKey(course1.getName(), student.getName()));
+//            Date date = new Date();
+//            Timestamp ts = new Timestamp(date.getTime());
+//            purchase.setSubscriptionDate(ts);
+//            session.save(purchase);
+//            transaction.commit();
+
         }
     }
 }

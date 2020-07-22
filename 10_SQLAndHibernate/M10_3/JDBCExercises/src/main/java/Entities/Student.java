@@ -2,6 +2,7 @@ package Entities;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.List;
 
 @Entity
 @Table(name = "students")
@@ -13,6 +14,10 @@ public class Student {
     private int age;
     @Column(name = "registration_date")
     private Timestamp registrationDate;
+
+    @OneToMany
+    @JoinColumn(name = "student_id")
+    private List<Subscription> subscriptionList;
 
 
     public Student() {
@@ -55,6 +60,10 @@ public class Student {
 
     public void setRegistrationDate(Timestamp registrationDate) {
         this.registrationDate = registrationDate;
+    }
+
+    public List<Subscription> getSubscriptionList() {
+        return subscriptionList;
     }
 
     @Override
