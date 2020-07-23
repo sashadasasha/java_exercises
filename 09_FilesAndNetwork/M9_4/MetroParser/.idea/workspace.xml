@@ -59,12 +59,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration name="MetroParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -95,7 +92,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -110,49 +107,33 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="796" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1593156962283">
+    <state x="471" y="114" key="#Project_Structure" timestamp="1593338454497">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="796" y="256" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1593156962283" />
-    <state x="771" y="295" key="FileChooserDialogImpl" timestamp="1593169261506">
+    <state x="471" y="114" key="#Project_Structure/62.0.1858.1080@62.0.1858.1080" timestamp="1593338454497" />
+    <state x="796" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1593339988471">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="771" y="295" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1593169261506" />
-    <state width="1815" height="364" key="GridCell.Tab.0.bottom" timestamp="1593158041812">
+    <state x="796" y="255" key="#com.intellij.ide.util.MemberChooser/62.0.1858.1080@62.0.1858.1080" timestamp="1593339988471" />
+    <state x="771" y="294" key="FileChooserDialogImpl" timestamp="1593801768707">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="364" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1593158041812" />
-    <state width="1815" height="364" key="GridCell.Tab.0.center" timestamp="1593158041811">
+    <state x="771" y="294" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1593801768707" />
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom" timestamp="1593341204429">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="364" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1593158041811" />
-    <state width="1815" height="364" key="GridCell.Tab.0.left" timestamp="1593158041811">
+    <state width="1815" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1593341204429" />
+    <state width="1815" height="295" key="GridCell.Tab.0.center" timestamp="1593341204429">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="364" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1593158041811" />
-    <state width="1815" height="364" key="GridCell.Tab.0.right" timestamp="1593158041811">
+    <state width="1815" height="295" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1593341204429" />
+    <state width="1815" height="295" key="GridCell.Tab.0.left" timestamp="1593341204429">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="364" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1593158041811" />
-    <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1593158041812">
+    <state width="1815" height="295" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1593341204429" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right" timestamp="1593341204429">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="364" key="GridCell.Tab.1.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1593158041812" />
-    <state width="1815" height="364" key="GridCell.Tab.1.center" timestamp="1593158041812">
-      <screen x="62" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1815" height="364" key="GridCell.Tab.1.center/62.0.1858.1080@62.0.1858.1080" timestamp="1593158041812" />
-    <state width="1815" height="364" key="GridCell.Tab.1.left" timestamp="1593158041812">
-      <screen x="62" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1815" height="364" key="GridCell.Tab.1.left/62.0.1858.1080@62.0.1858.1080" timestamp="1593158041812" />
-    <state width="1815" height="364" key="GridCell.Tab.1.right" timestamp="1593158041812">
-      <screen x="62" y="0" width="1858" height="1080" />
-    </state>
-    <state width="1815" height="364" key="GridCell.Tab.1.right/62.0.1858.1080@62.0.1858.1080" timestamp="1593158041812" />
-    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1593110297241">
-      <screen x="62" y="0" width="1858" height="1080" />
-    </state>
-    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1593110297241" />
+    <state width="1815" height="295" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1593341204429" />
   </component>
 </project>
