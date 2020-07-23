@@ -20,8 +20,8 @@ public class Course {
 
     @ManyToOne
     private Teacher teacher;
-    @Column(name = "students_count")
-    private int studentsCount;
+    @Column(name = "students_count", nullable = true)
+    private Integer studentsCount;
     private int price;
     @Column(name = "price_per_hour")
     private float pricePerHour;
@@ -32,7 +32,8 @@ public class Course {
     inverseJoinColumns = {@JoinColumn (name = "student_id")})
     private List<Student> studentsList;
 
-    @OneToMany(mappedBy = "subscriptionsKey.course")
+    @OneToMany
+    @JoinColumn(name = "course_id")
     private List<Subscription> subscriptionList;
 
     public Course(int id, String name, int duration, CourseType type, String description, Teacher teacher, int studentsCount, int price, float pricePerHour, List<Student> studentsList) {
@@ -124,11 +125,11 @@ public class Course {
         this.pricePerHour = pricePerHour;
     }
 
-    public Entities.CourseType getType() {
+    public CourseType getType() {
         return type;
     }
 
-    public void setType(Entities.CourseType type) {
+    public void setType(CourseType type) {
         this.type = type;
     }
 

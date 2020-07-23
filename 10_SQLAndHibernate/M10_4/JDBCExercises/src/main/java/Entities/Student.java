@@ -15,7 +15,8 @@ public class Student {
     @Column(name = "registration_date")
     private Timestamp registrationDate;
 
-    @OneToMany(mappedBy = "subscriptionsKey.student")
+    @OneToMany
+    @JoinColumn(name = "student_id")
     private List<Subscription> subscriptionList;
 
 
