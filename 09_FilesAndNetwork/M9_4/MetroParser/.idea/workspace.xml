@@ -19,24 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c117d4-ffac-4c0f-9988-b4a8296c0213" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_13_1.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d418accc-912e-4aba-9b00-a21879b5afa8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/../../.." value="M9_4" />
-      </map>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
     </option>
+  </component>
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-14.0.1/lib/src.zip!/java.base/java/util/HashMap.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-14.0.1/lib/src.zip!/java.base/java/lang/String.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-14.0.1/lib/src.zip!/java.base/java/lang/StringLatin1.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -45,7 +47,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1dwZQXPrrsnQDNKJc8wBJ2yY0OP" />
+  <component name="ProjectId" id="1dlLvt1k3T4m9izrxH45NNxSm0W" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -75,17 +77,17 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a6c117d4-ffac-4c0f-9988-b4a8296c0213" name="Default Changelist" comment="" />
-      <created>1593338099315</created>
+      <changelist id="d418accc-912e-4aba-9b00-a21879b5afa8" name="Default Changelist" comment="" />
+      <created>1592994968014</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1593338099315</updated>
-      <workItem from="1593338100367" duration="306000" />
-      <workItem from="1593509306953" duration="23000" />
-      <workItem from="1593801724328" duration="47000" />
+      <updated>1592994968014</updated>
+      <workItem from="1592995326662" duration="110000" />
+      <workItem from="1593082298514" duration="9490000" />
+      <workItem from="1593155977822" duration="2157000" />
+      <workItem from="1593169243703" duration="20000" />
     </task>
     <servers />
   </component>
