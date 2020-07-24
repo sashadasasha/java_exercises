@@ -6,33 +6,35 @@ import java.io.Serializable;
 @Embeddable
 public class LinkedPurchaseKey implements Serializable {
 
-    @Column(name = "student_id")
-    private Integer studentId;
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "student_id")
+    private Student student;
 
-    @Column(name = "course_id")
-    private Integer courseId;
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "course_id")
+    private Course course;
 
     public LinkedPurchaseKey() {
     }
 
-    public LinkedPurchaseKey(int studentId, int courseId) {
-        this.studentId = studentId;
-        this.courseId = courseId;
+    public LinkedPurchaseKey(Student student, Course course) {
+        this.student = student;
+        this.course = course;
     }
 
-    public int getStudentId() {
-        return studentId;
+    public Student getStudent() {
+        return student;
     }
 
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
+    public void setStudent(Student student) {
+        this.student = student;
     }
 
-    public int getCourseId() {
-        return courseId;
+    public Course getCourse() {
+        return course;
     }
 
-    public void setCourseId(int courseId) {
-        this.courseId = courseId;
+    public void setCourse(Course course) {
+        this.course = course;
     }
 }
