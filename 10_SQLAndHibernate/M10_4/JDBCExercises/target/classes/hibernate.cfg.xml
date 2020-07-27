@@ -17,7 +17,6 @@
         <mapping class="Entities.Student"></mapping>
         <mapping class="Entities.Teacher"></mapping>
         <mapping class="Entities.Subscription"></mapping>
-        <mapping class="Entities.Purchase"></mapping>
         <mapping class="Entities.LinkedPurchase"></mapping>
     </session-factory>
 </hibernate-configuration>

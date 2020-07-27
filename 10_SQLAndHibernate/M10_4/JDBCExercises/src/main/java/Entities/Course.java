@@ -35,6 +35,9 @@ public class Course {
     @OneToMany(mappedBy = "subscriptionsKey.course")
     private List<Subscription> subscriptionList;
 
+    @OneToMany(mappedBy = "purchaseKey.course")
+    private List<LinkedPurchase> linkedPurchaseList;
+
     public Course(int id, String name, int duration, CourseType type, String description, Teacher teacher, int studentsCount, int price, float pricePerHour, List<Student> studentsList) {
         this.id = id;
         this.name = name;

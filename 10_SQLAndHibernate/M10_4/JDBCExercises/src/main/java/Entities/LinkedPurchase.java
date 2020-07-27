@@ -11,7 +11,7 @@ import java.sql.Timestamp;
 public class LinkedPurchase {
 
     @EmbeddedId
-    private LinkedPurchaseKey purchaseKye;
+    private LinkedPurchaseKey purchaseKey;
 
     private int price;
 
@@ -21,18 +21,18 @@ public class LinkedPurchase {
     public LinkedPurchase() {
     }
 
-    public LinkedPurchase(LinkedPurchaseKey purchaseKye, int price, Timestamp subscriptionDate) {
-        this.purchaseKye = purchaseKye;
+    public LinkedPurchase(LinkedPurchaseKey purchaseKey, int price, Timestamp subscriptionDate) {
+        this.purchaseKey = purchaseKey;
         this.price = price;
         this.subscriptionDate = subscriptionDate;
     }
 
-    public LinkedPurchaseKey getPurchaseKye() {
-        return purchaseKye;
+    public LinkedPurchaseKey getPurchaseKey() {
+        return purchaseKey;
     }
 
-    public void setPurchaseKye(LinkedPurchaseKey purchaseKye) {
-        this.purchaseKye = purchaseKye;
+    public void setPurchaseKey(LinkedPurchaseKey purchaseKey) {
+        this.purchaseKey = purchaseKey;
     }
 
     public int getPrice() {
