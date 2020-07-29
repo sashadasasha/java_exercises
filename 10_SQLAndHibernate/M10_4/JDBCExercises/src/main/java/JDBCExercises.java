@@ -10,6 +10,7 @@ import org.hibernate.query.Query;
 
 import java.sql.Timestamp;
 import java.util.List;
+import java.util.Set;
 
 public class JDBCExercises {
     public static void main(String[] args)  {
@@ -18,26 +19,16 @@ public class JDBCExercises {
         Metadata metadata = new MetadataSources(standardServiceRegistry).getMetadataBuilder().build();
         try(SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();
             Session session = sessionFactory.openSession()) {
-            NativeQuery query = session.createSQLQuery("SELECT * FROM purchaselist");
-            List<Object[]> list = query.getResultList();
-            list.forEach(el->{
-                String hql = "FROM Student WHERE name = :studentName";
-                Query query1 = session.createQuery(hql);
-                query1.setParameter("studentName", el[0]);
-                List<Student> students = query1.getResultList();
-                Student student = students.get(0);
-                String hql2 = "FROM Course WHERE name = :courseName";
-                Query query2 = session.createQuery(hql2);
-                query2.setParameter("courseName", el[1]);
-                Course course = (Course) query2.getSingleResult();
-                Transaction transaction = session.beginTransaction();
-                LinkedPurchase linkedPurchase = new LinkedPurchase();
-                linkedPurchase.setPurchaseKey(new LinkedPurchaseKey(student,course));
-                linkedPurchase.setPrice((Integer)el[2]);
-                linkedPurchase.setSubscriptionDate((Timestamp)el[3]);
-                session.persist(linkedPurchase);
-                transaction.commit();
-            });
+
+            Course course = session.get(Course.class, 8);
+            Teacher teacher = session.get(Teacher.class, 14);
+
+            Set<Course> courseSet = teacher.getCourseSet();
+            Transaction transaction = session.beginTransaction();
+            courseSet.add(course);
+            teacher.setCourseSet(courseSet);
+            session.save(teacher);
+            transaction.commit();
         }
     }
 }

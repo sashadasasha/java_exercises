@@ -1,6 +1,8 @@
 package Entities;
 
 import javax.persistence.*;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "teachers")
@@ -13,6 +15,12 @@ public class Teacher {
     private String name;
     private int salary;
     private int age;
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name ="courses_teachers",
+            joinColumns = {@JoinColumn(name = "teacher_id", columnDefinition = "INT UNSIGNED")},
+            inverseJoinColumns = {@JoinColumn(name="course_id", columnDefinition = "INT UNSIGNED")})
+    private Set<Course> courseSet;
 
     public Teacher () {}
 
@@ -53,5 +61,13 @@ public class Teacher {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public Set<Course> getCourseSet() {
+        return courseSet;
+    }
+
+    public void setCourseSet(Set<Course> courseSet) {
+        this.courseSet = courseSet;
     }
 }

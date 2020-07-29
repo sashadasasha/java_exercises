@@ -1,7 +1,9 @@
 package Entities;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "Courses")
@@ -18,8 +20,12 @@ public class Course {
     private CourseType type;
     private String description;
 
-    @ManyToOne
-    private Teacher teacher;
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name ="courses_teachers",
+    joinColumns = {@JoinColumn(name = "course_id", columnDefinition = "INT UNSIGNED")},
+    inverseJoinColumns = {@JoinColumn(name="teacher_id", columnDefinition = "INT UNSIGNED")})
+    private Set<Teacher> teachersSet;
+
     @Column(name = "students_count")
     private int studentsCount;
     private int price;
@@ -35,16 +41,16 @@ public class Course {
     @OneToMany(mappedBy = "subscriptionsKey.course")
     private List<Subscription> subscriptionList;
 
-    @OneToMany(mappedBy = "purchaseKey.course")
-    private List<LinkedPurchase> linkedPurchaseList;
+//    @OneToMany(mappedBy = "purchaseKey.course")
+//    private List<LinkedPurchase> linkedPurchaseList;
 
-    public Course(int id, String name, int duration, CourseType type, String description, Teacher teacher, int studentsCount, int price, float pricePerHour, List<Student> studentsList) {
+    public Course(int id, String name, int duration, CourseType type, String description, Set<Teacher> teachersSet, int studentsCount, int price, float pricePerHour, List<Student> studentsList) {
         this.id = id;
         this.name = name;
         this.duration = duration;
         this.type = type;
         this.description = description;
-        this.teacher = teacher;
+        this.teachersSet = teachersSet;
         this.studentsCount = studentsCount;
         this.price = price;
         this.pricePerHour = pricePerHour;
@@ -95,14 +101,6 @@ public class Course {
         this.description = description;
     }
 
-    public Teacher getTeacher() {
-        return teacher;
-    }
-
-    public void setTeacher(Teacher teacher) {
-        this.teacher = teacher;
-    }
-
     public int getStudentsCount() {
         return studentsCount;
     }
@@ -143,6 +141,18 @@ public class Course {
         return subscriptionList;
     }
 
+    public Set<Teacher> getTeachersSet() {
+        return teachersSet;
+    }
+
+    public void setTeachersSet(Set<Teacher> teachersSet) {
+        this.teachersSet = teachersSet;
+    }
+
+    //    public List<LinkedPurchase> getLinkedPurchaseList() {
+//        return linkedPurchaseList;
+//    }
+
     @Override
     public String toString() {
         return "Course{" +
@@ -151,7 +161,7 @@ public class Course {
                 ", duration=" + duration +
                 ", type=" + type +
                 ", description='" + description + '\'' +
-                ", teacher=" + teacher +
+                ", teacher=" + teachersSet +
                 ", studentsCount=" + studentsCount +
                 ", price=" + price +
                 ", pricePerHour=" + pricePerHour +

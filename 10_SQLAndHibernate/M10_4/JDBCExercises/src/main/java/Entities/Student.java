@@ -18,8 +18,8 @@ public class Student {
     @OneToMany(mappedBy = "subscriptionsKey.student")
     private List<Subscription> subscriptionList;
 
-    @OneToMany(mappedBy = "purchaseKey.student")
-    private List<LinkedPurchase> linkedPurchaseList;
+//    @OneToMany(mappedBy = "purchaseKey.student")
+//    private List<LinkedPurchase> linkedPurchaseList;
 
     public Student() {
     }
