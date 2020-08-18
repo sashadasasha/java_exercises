@@ -70,4 +70,22 @@ public class Teacher {
     public void setCourseSet(Set<Course> courseSet) {
         this.courseSet = courseSet;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+
+        if (!(o instanceof Teacher))
+            return false;
+
+        Teacher other = (Teacher) o;
+
+        return id != 0 &&
+                id == other.getId();
+    }
+
+    @Override
+    public int hashCode() {
+        return 31;
+    }
 }

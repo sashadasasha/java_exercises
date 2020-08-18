@@ -1,0 +1,2 @@
+Hibernate: alter table teachers_Courses add constraint FKcyv2cqcqxbwea655asqx97bqn foreign key (teachers_id) references Courses (id)
+Hibernate: alter table teachers_Courses add constraint FKlx3bgfe357dhuwmlhosipqx0x foreign key (course_id) references teachers (id)

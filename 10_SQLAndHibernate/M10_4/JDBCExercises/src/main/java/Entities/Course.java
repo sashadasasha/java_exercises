@@ -168,4 +168,22 @@ public class Course {
                 ", studentsList=" + studentsList +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+
+        if (!(o instanceof Course))
+            return false;
+
+        Course other = (Course) o;
+
+        return id != 0 &&
+                id == other.getId();
+    }
+
+    @Override
+    public int hashCode() {
+        return 31;
+    }
 }
