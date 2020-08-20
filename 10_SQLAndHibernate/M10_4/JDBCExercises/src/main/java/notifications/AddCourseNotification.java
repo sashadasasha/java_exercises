@@ -8,8 +8,7 @@ import javax.persistence.*;
 @Entity
 public class AddCourseNotification extends Notification {
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinTable(name = "Courses")
-    @JoinColumn(name = "course_id", columnDefinition = "INT UNSIGNED")
+    @JoinColumn(columnDefinition = "INT UNSIGNED")
     private Course notificationSender;
 
     public AddCourseNotification(Course notificationSender) {

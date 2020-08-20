@@ -4,16 +4,15 @@ import Entities.Teacher;
 
 import javax.persistence.*;
 
-@MappedSuperclass
-@Table(name = "Notification")
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Notification {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinTable(name = "Teachers")
-    @JoinColumn(name = "teacher_id", columnDefinition = "INT UNSIGNED")
+    @JoinColumn(columnDefinition = "INT UNSIGNED")
     private Teacher notificationReceiver;
     private String notificationText;
     private String notificationHeader;

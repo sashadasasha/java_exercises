@@ -9,8 +9,7 @@ import javax.persistence.*;
 public class SendWorkNotification extends Notification {
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinTable(name = "Students")
-    @JoinColumn(name = "student_id", columnDefinition = "INT UNSIGNED")
+    @JoinColumn(columnDefinition = "INT UNSIGNED")
     private Student notificationSender;
 
     public SendWorkNotification() {

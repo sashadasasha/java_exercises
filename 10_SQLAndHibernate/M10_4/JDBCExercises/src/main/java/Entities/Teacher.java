@@ -1,7 +1,5 @@
 package Entities;
 
-import notifications.Notification;
-
 import javax.persistence.*;
 import java.util.List;
 import java.util.Set;
