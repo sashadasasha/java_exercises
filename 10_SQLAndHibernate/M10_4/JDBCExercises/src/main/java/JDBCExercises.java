@@ -1,4 +1,5 @@
 import Entities.*;
+import notifications.SendWorkNotification;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -20,14 +21,15 @@ public class JDBCExercises {
         try(SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();
             Session session = sessionFactory.openSession()) {
 
-            Course course = session.get(Course.class, 8);
-            Teacher teacher = session.get(Teacher.class, 14);
-
-            Set<Course> courseSet = teacher.getCourseSet();
+            Student student = session.get(Student.class, 3);
+            Teacher teacher = session.get(Teacher.class, 5);
+            SendWorkNotification sendWorkNotification = new SendWorkNotification();
             Transaction transaction = session.beginTransaction();
-            courseSet.add(course);
-            teacher.setCourseSet(courseSet);
-            session.save(teacher);
+            sendWorkNotification.setNotificationSender(student);
+            sendWorkNotification.setNotificationReceiver(teacher);
+            sendWorkNotification.setNotificationHeader("Пришла one more работа");
+            sendWorkNotification.setNotificationText("Проверьте работу в течение недели и дайте студенту ответ!");
+            session.persist(sendWorkNotification);
             transaction.commit();
         }
     }
