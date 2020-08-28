@@ -1,7 +1,7 @@
+import org.apache.commons.io.FilenameUtils;
 import org.imgscalr.Scalr;
 
 import javax.imageio.ImageIO;
-
 import java.awt.image.BufferedImage;
 import java.awt.image.BufferedImageOp;
 import java.io.File;
@@ -38,7 +38,9 @@ public class ImageResizer implements Runnable {
                 BufferedImage newImage = Scalr.resize(image, newWidth, newHeight, (BufferedImageOp[])null);
 
                 File newFile = new File(dstFolder + "/" + file.getName());
-                ImageIO.write(newImage, "jpg", newFile);
+                System.out.println(newFile.getName());
+                ImageIO.write(newImage, FilenameUtils.getExtension(file.getName()), newFile);
+
             }
         } catch (Exception ex) {
             ex.printStackTrace();

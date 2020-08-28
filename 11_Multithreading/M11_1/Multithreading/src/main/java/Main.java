@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
-        String srcFolder = "C:\\Users\\Sasha\\Desktop\\src";
-        String dstFolder = "C:\\Users\\Sasha\\Desktop\\dst";
+    public static void main(String[] args) throws InterruptedException {
+        String srcFolder = "/home/sasha/src";
+        String dstFolder = "/home/sasha/dst";
 
         File srcDir = new File(srcFolder);
 
@@ -32,7 +32,9 @@ public class Main {
         long start = System.currentTimeMillis();
         for (List<File> f : listOfLists) {
             ImageResizer imageResizer = new ImageResizer(dstFolder, 300, f, start);
-            new Thread(imageResizer).start();
+            Thread th = new Thread(imageResizer);
+            th.start();
+            th.join();
         }
     }
 }
