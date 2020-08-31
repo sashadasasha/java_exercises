@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        String srcFolder = "/home/sasha/src";
-        String dstFolder = "/home/sasha/dst";
+        String srcFolder = "C:\\Users\\Sasha\\Desktop\\src";
+        String dstFolder = "C:\\Users\\Sasha\\Desktop\\dst";
 
         File srcDir = new File(srcFolder);
 
@@ -30,11 +30,20 @@ public class Main {
         }
 
         long start = System.currentTimeMillis();
+        List<Thread> threadList = new ArrayList<>();
         for (List<File> f : listOfLists) {
             ImageResizer imageResizer = new ImageResizer(dstFolder, 300, f, start);
             Thread th = new Thread(imageResizer);
-            th.start();
-            th.join();
+            threadList.add(th);
         }
+
+        threadList.forEach(Thread::start);
+        threadList.forEach(thread -> {
+            try {
+                thread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
     }
 }

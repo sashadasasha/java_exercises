@@ -38,7 +38,6 @@ public class ImageResizer implements Runnable {
                 BufferedImage newImage = Scalr.resize(image, newWidth, newHeight, (BufferedImageOp[])null);
 
                 File newFile = new File(dstFolder + "/" + file.getName());
-                System.out.println(newFile.getName());
                 ImageIO.write(newImage, FilenameUtils.getExtension(file.getName()), newFile);
 
             }
