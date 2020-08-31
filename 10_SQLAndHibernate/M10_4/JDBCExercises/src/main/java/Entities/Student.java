@@ -15,10 +15,11 @@ public class Student {
     @Column(name = "registration_date")
     private Timestamp registrationDate;
 
-    @OneToMany
-    @JoinColumn(name = "student_id")
+    @OneToMany(mappedBy = "subscriptionsKey.student")
     private List<Subscription> subscriptionList;
 
+//    @OneToMany(mappedBy = "purchaseKey.student")
+//    private List<LinkedPurchase> linkedPurchaseList;
 
     public Student() {
     }

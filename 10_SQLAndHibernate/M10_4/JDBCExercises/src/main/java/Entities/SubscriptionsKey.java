@@ -1,18 +1,15 @@
 package Entities;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Embeddable;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Embeddable
 public class SubscriptionsKey implements Serializable {
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "student_id")
+    @JoinColumn(name = "student_id", columnDefinition = "INT UNSIGNED")
     private Student student;
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "course_id")
+    @JoinColumn(name = "course_id", columnDefinition = "INT UNSIGNED")
     private Course course;
 
     public SubscriptionsKey() {
