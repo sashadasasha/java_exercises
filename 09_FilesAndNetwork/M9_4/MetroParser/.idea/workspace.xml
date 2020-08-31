@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,7 +23,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="d418accc-912e-4aba-9b00-a21879b5afa8" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="a6c117d4-ffac-4c0f-9988-b4a8296c0213" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_13_1.xml" afterDir="false" />
+    </list>
+
+>>>>>>> bae33eeb2338857dbe27cd1ddbb77ca8bf4293d9
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +61,11 @@
       </MavenGeneralSettings>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="1dlLvt1k3T4m9izrxH45NNxSm0W" />
+=======
+  <component name="ProjectId" id="1dwZQXPrrsnQDNKJc8wBJ2yY0OP" />
+>>>>>>> bae33eeb2338857dbe27cd1ddbb77ca8bf4293d9
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -61,7 +79,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
+<<<<<<< HEAD
     <property name="project.structure.side.proportion" value="0.2" />
+=======
+>>>>>>> bae33eeb2338857dbe27cd1ddbb77ca8bf4293d9
   </component>
   <component name="RunManager">
     <configuration name="MetroParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -79,6 +100,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="d418accc-912e-4aba-9b00-a21879b5afa8" name="Default Changelist" comment="" />
       <created>1592994968014</created>
       <option name="number" value="Default" />
@@ -88,6 +110,17 @@
       <workItem from="1593082298514" duration="9490000" />
       <workItem from="1593155977822" duration="2157000" />
       <workItem from="1593169243703" duration="20000" />
+=======
+
+      <changelist id="a6c117d4-ffac-4c0f-9988-b4a8296c0213" name="Default Changelist" comment="" />
+      <created>1593338099315</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593338099315</updated>
+      <workItem from="1593338100367" duration="306000" />
+      <workItem from="1593509306953" duration="23000" />
+      <workItem from="1593801724328" duration="47000" />
+>>>>>>> bae33eeb2338857dbe27cd1ddbb77ca8bf4293d9
     </task>
     <servers />
   </component>
