@@ -2,7 +2,7 @@
 /.idea
 /out
 10_SQLAndHibernate/M10_4/JDBCExercises/target/*
-*.iml
+*.iml*
 **/target/*
 **/.settings/*
 *.project
