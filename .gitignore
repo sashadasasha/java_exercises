@@ -3,9 +3,9 @@
 /out
 10_SQLAndHibernate/M10_4/JDBCExercises/target/*
 *.iml
-*/target/
-*/.settings/
+**/target/*
+**/.settings/*
 *.project
 *.classpath
 /.vscode
-*/.idea
+**/.idea
